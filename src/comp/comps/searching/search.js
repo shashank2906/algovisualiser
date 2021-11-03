@@ -1,6 +1,6 @@
-import react from 'react';
 
-const search = ()=>{
+
+function search(){
 
     return(
         <>

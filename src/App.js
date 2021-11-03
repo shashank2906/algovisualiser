@@ -2,10 +2,20 @@ import './App.css';
 import search from './comp/comps/searching/search';
 
 
+
+
+
+
+
+
+
 function App() {
+
+
   return (
 
     <>
+
     
 
 
@@ -47,7 +57,7 @@ function App() {
 
     </div>
 
-
+     
 
     <div className='disp deck-page-wrap'>
         <div className='headings h1'>
@@ -80,6 +90,11 @@ function App() {
 
     </div>
 
+
+
+    <button onClick ={search}>
+           Activate Lasers
+    </button>
 
   </div>
 
