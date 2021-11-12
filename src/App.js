@@ -1,104 +1,25 @@
 import './App.css';
-import search from './comp/comps/searching/search';
+import {Switch ,Route} from 'react-router'
 
-
-
-
-
-
-
-
+import Home from './components/home';
+import About from './components/about';
+import Error from './components/error';
+import Navbar from './components/nav';
 
 function App() {
-
-
   return (
+ 
+    <main> 
 
-    <>
+      
 
-    
-
-
-  <div className = "deck-page">
-    <div className="disp heading-wrap">
-      <h1>Algo-Deck</h1>
-    </div>
-
-
-
-    <div className='disp deck-page-wrap'>
-        <div className='headings h1'>
-        <a href ={search}><h1>SEARCHING</h1></a>
-
-        </div>
-        <div className='headings h2'>
-        <a><h1>SORTING</h1></a>
-
-        </div>
-        <div className='headings h3'>
-        <a><h1>SORTING</h1></a>
-
-        </div>
-        <div className='headings h4'>
-        <a><h1>SORTING</h1></a>
-
-        </div>
-        <div className='headings h4'>
-        <a><h1>SORTING</h1></a>
-
-        </div>
-        <div className='headings h4'>
-        <a><h1>SORTING</h1></a>
-
-        </div>
+    <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/about" component={About} />
         
-
-
-
-    </div>
-
-     
-
-    <div className='disp deck-page-wrap'>
-        <div className='headings h1'>
-          <h1>SORTING</h1>
-
-        </div>
-        <div className='headings h2'>
-        <h1>SORTING</h1>
-
-        </div>
-        <div className='headings h3'>
-        <h1>SORTING</h1>
-
-        </div>
-        <div className='headings h4'>
-        <h1>SORTING</h1>
-
-        </div>
-        <div className='headings h4'>
-        <h1>SORTING</h1>
-
-        </div>
-        <div className='headings h4'>
-        <h1>SORTING</h1>
-
-        </div>
-        
-
-
-
-    </div>
-
-
-
-    <button onClick ={search}>
-           Activate Lasers
-    </button>
-
-  </div>
-
-    </>
+    </Switch>
+</main>
+   
   );
 }
 
