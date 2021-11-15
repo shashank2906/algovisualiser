@@ -1,26 +1,20 @@
-import './App.css';
-import {Switch ,Route} from 'react-router'
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+ 
 import Home from './components/home';
 import About from './components/about';
-import Error from './components/error';
-import Navbar from './components/nav';
+import Contact from './components/contact';
+import './App.css';
 
-function App() {
-  return (
- 
-    <main> 
-
-      
-
-    <Switch>
-        <Route path="/" component={Home} exact />
-        <Route path="/about" component={About} />
-        
-    </Switch>
-</main>
-   
-  );
+class App extends React.Component {
+   render() {
+      return (
+        <div>
+          <Home />
+          <About />
+          <Contact />
+        </div>
+      )
+   }
 }
-
 export default App;
