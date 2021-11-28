@@ -1,0 +1,52 @@
+body{
+ background-color: #FBFCFC;
+
+}
+
+.header{
+    background-size: cover;
+    width: 350px;
+    height: 350px;
+    /* min-width: 400px; */
+    background-color: #fff;
+    border-radius: 8px;
+
+    box-shadow: -2px 7px 26px 0px rgba(125,119,119,0.5);
+-webkit-box-shadow: -2px 7px 26px 0px rgba(125,119,119,0.5);
+-moz-box-shadow: -2px 7px 26px 0px rgba(125,119,119,0.5);
+
+margin-top: 60px;
+
+}
+
+.header:hover{
+
+
+}
+
+.outer{
+    
+    color: #383838	;
+}
+    
+@media screen and (max-width: 1200px) {
+    .header{
+        width: 250px;
+        height: 250px;
+        
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .header{
+        width: 200px;
+        height: 200px;
+        
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+}
+    
+    
