@@ -1,32 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Searching from './components/searching';
-import Sorting from './components/sorting';
-import Backtracking from './components/backtracking';
-
+import Algos from './Algos';
 import './App.css';
+import Search from './components/algos/Searching';
+import Sort from './components/algos/Sorting';
+import Back from './components/algos/Backtrack';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div class='container-fluid text-center outer'>
-        <lord-icon
-          src='https://cdn.lordicon.com/dzllstvg.json'
-          trigger='loop'
-          colors='primary:#121331,secondary:#915110'
-          stroke='62'
-          scale='47'
-          style={{ width: '250px', height: '250px' }}
-        ></lord-icon>
+      
+       <main>
+       <Routes>
+        <Route path='/' element = {<Algos />} exact/>
+        <Route path='/searching' element ={<Search />} />
+        <Route path='/sorting' element ={<Sort />} />
+        <Route path='/backtracking' element ={<Back />} />
 
-        <h1>Algo-Desk</h1>
-      </div>
+        
+       </Routes>
+       </main>
 
-      <div class='container-fluid d-flex justify-content-around flex-wrap'>
-        <Sorting />
-        <Searching />
-        <Backtracking />
-      </div>
     </BrowserRouter>
   );
 };
