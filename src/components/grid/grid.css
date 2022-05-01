@@ -1,0 +1,14 @@
+
+ul{
+    display: flex;
+}
+
+ul li{
+    display: inline; /* the default for span */
+    width: 40px;
+    height: 500px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+    margin-right: 30px;
+}
