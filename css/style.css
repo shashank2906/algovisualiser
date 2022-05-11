@@ -1,85 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+
 }
-
-nav {
-  color: white;
-
+.main-heading{
   display: flex;
-}
+  justify-content: center;
+  margin-top: 30px;
 
-nav .array-inputs {
-  display: flex;
-}
-
-nav .array-inputs #a_generate {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  color: white;
-}
-
-nav .array-inputs #a_generate:hover {
-  cursor: pointer;
-}
-
-nav .header_right {
-  display: flex;
-
-  flex-direction: column;
-}
-
-nav .header_right .algos {
-  display: flex;
-}
-
-nav .header_right .algos button {
-  background-color: transparent;
-  border: none;
-  color: white;
-  outline: none;
-}
-
-nav .header_right .algos button:hover {
-  background-color: blue;
-  cursor: pointer;
-}
-
-nav .header_right .algos .butt_locked {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-nav .header_right .algos .butt_locked:hover {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-nav .header_right .algos .butt_selected {
-  background-color: white;
-  color: green;
-}
-
-nav .header_right .algos .butt_selected:hover {
-  background-color: white;
-  cursor: pointer;
-}
-
-nav .header_right .algos .butt_unselected:hover {
-  background-color: blue;
-  cursor: pointer;
 }
 
 section {
   display: grid;
-
   grid-template-columns: 2% 60% 38%;
 }
 
 section #Info_Cont1 {
-  padding: 20%;
+  margin-left: 40px;
 }
 
 section #array_container {
@@ -91,25 +32,46 @@ section #array_container {
 }
 
 section #Info_Cont2 {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.section2{
+  margin-left: 30px;
+  margin-top: 20px;
+  
+}
+.section2 button{
+  padding: 10px;
+  border-radius: 6px;
+}
+
+ /* footer content start  */
+.header_right{
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  flex-wrap: wrap;
+
+}
+.algos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.algos button{
+  padding: 20px;
+  margin: 10px;
+  width: 100px;
+  height: 30px;
+  border-radius: 6px;
+  border: 2px solid green;
+
 }
 
 .hide {
   display: none;
 }
-
-/*
-@media (max-width: 480px)//Mobiles
-{
-    
-}
-
-@media (min-width: 481px) and (max-width: 1250px)//Tablets
-{
-
-}
-
-@media (min-width: 1251px)//Laptops and up
-{
-
-}
-*/
