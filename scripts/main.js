@@ -32,8 +32,8 @@ function generate_array()
         div_sizes[i]=Math.floor(Math.random() * 0.5*(inp_as.max - inp_as.min) ) + 10;
         divs[i]=document.createElement("div");
         cont.appendChild(divs[i]);
-        margin_size=0.1;
-        divs[i].style=" margin:0% " + margin_size + "%; background-color:grey; width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
+        margin_size=0.3;
+        divs[i].style=" margin:0% " + margin_size + "%; background-color:rgb(34,37,49); width:" + (100/array_size-(2*margin_size)) + "%; height:" + (div_sizes[i]) + "%;";
 
     }
 }
