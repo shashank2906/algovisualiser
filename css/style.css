@@ -5,22 +5,19 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
-
 }
-.main-heading{
+.main-heading {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-
 }
 
 section {
   display: grid;
-  grid-template-columns: 2% 60% 38%;
+  grid-template-columns: 5% 90% 5%;
 }
 
 section #Info_Cont1 {
-  margin-left: 40px;
 }
 
 section #array_container {
@@ -32,39 +29,40 @@ section #array_container {
 }
 
 section #Info_Cont2 {
-  padding: 30px;
-  align-items: center;
+}
+
+.section2 {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-}
-.section2{
   margin-top: 15px;
 }
-.section2 button{
+.section2 button {
   padding: 10px;
   border-radius: 6px;
+  background-color: crimson;
+  color: #fff;
+  border: 2px solid crimson;
 }
 
- /* footer content start  */
-/* .header_right{
-  display: flex;
-  justify-content: center;
-  padding: 30px;
-  flex-wrap: wrap;
-  align-items: center;
-
-} */
-
-.algos{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-
+.section2 button:hover {
+  background-color: #fff;
+  color: crimson;
+  border: 2px solid crimson;
+  cursor: pointer;
 }
 
-.algos button{
+.algos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.algos button {
   padding: 20px;
   margin: 10px;
   min-width: 100px;
@@ -72,23 +70,42 @@ section #Info_Cont2 {
   background-color: green;
   border: 2px solid green;
   border-radius: 6px;
-  
 }
-.algos button:hover{
+.algos button:hover {
   border-radius: 6px;
   border: 2px solid green;
   color: green;
   background-color: white;
+  cursor: pointer;
+}
 
+footer {
+  display: flex;
+  flex-direction: column;
+}
 
+.array-inputs {
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.array-inputs:hover {
+  cursor: pointer;
 }
 
 .hide {
   display: none;
 }
+.fixed {
+  margin: 0 20px;
+}
+
+.fixed input:hover {
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 600px) {
-  
   section #array_container {
     display: flex;
     align-items: flex-end;
@@ -96,24 +113,7 @@ section #Info_Cont2 {
     height: 40vh;
     margin-bottom: 30px;
   }
-  section #Info_Cont2 {
-    padding: 10px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 130px;
-  }
 }
 
 @media only screen and (max-width: 400px) {
-
-  section #Info_Cont2 {
-    padding: 5px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-top: 130px;
-  }
-
-
 }
