@@ -5,6 +5,7 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
+  text-decoration: none;
 }
 .main-heading {
   display: flex;
@@ -92,6 +93,24 @@ footer {
 }
 .array-inputs:hover {
   cursor: pointer;
+}
+
+.section2 a{
+  
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: crimson;
+  color: #fff;
+  border: 2px solid crimson;
+
+}
+
+.section2 a:hover{
+  background-color: #fff;
+  color: crimson;
+  border: 2px solid crimson;
+  cursor: pointer;
+
 }
 
 .hide {
