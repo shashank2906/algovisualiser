@@ -7,7 +7,9 @@
   font-family: 'Lato', sans-serif;
   text-decoration: none;
 }
-
+body {
+  background-color: #f6f6f6;
+}
 .box {
   display: flex;
   flex-direction: column;
@@ -23,15 +25,15 @@ a {
   align-items: center;
   padding: 40px;
   margin: 40px;
-  background-color: crimson;
-  color: #fff;
+  background-color: #345b63;
+  color: #f6f6f6;
   border-radius: 6px;
-  border: 2px solid crimson;
+  border: 2px solid #345b63;
 }
 
 a:hover {
-  background-color: #fff;
-  color: crimson;
+  background-color: #f6f6f6;
+  color: #345b63;
 }
 
 @media only screen and (max-width: 600px) {

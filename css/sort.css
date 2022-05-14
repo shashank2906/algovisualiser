@@ -7,10 +7,21 @@
   font-family: 'Lato', sans-serif;
   text-decoration: none;
 }
+body {
+  background-color: #f6f6f6;
+}
 .main-heading {
   display: flex;
   justify-content: center;
-  margin-top: 30px;
+  color: #f6f6f6;
+  font-size: 40px;
+  font-weight: 800;
+  background: #345b63;
+  padding: 40px 20px 20px 20px;
+}
+
+.fixed p {
+  color: #345b63;
 }
 
 section {
@@ -35,18 +46,26 @@ section #Info_Cont2 {
 .section2 {
   display: flex;
   justify-content: center;
+  background-color: #345b63;
+  padding-bottom: 50px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
   margin-top: 15px;
 }
-.section2 button {
+
+.section3 button {
   padding: 10px;
   border-radius: 6px;
   background-color: crimson;
-  color: #fff;
+  color: #f6f6f6;
   border: 2px solid crimson;
 }
 
-.section2 button:hover {
-  background-color: #fff;
+.section3 button:hover {
+  background-color: #f6f6f6;
   color: crimson;
   border: 2px solid crimson;
   cursor: pointer;
@@ -67,7 +86,7 @@ section #Info_Cont2 {
   padding: 20px;
   margin: 10px;
   min-width: 100px;
-  color: white;
+  color: #f6f6f6;
   background-color: green;
   border: 2px solid green;
   border-radius: 6px;
@@ -76,7 +95,7 @@ section #Info_Cont2 {
   border-radius: 6px;
   border: 2px solid green;
   color: green;
-  background-color: white;
+  background-color: #f6f6f6;
   cursor: pointer;
 }
 
@@ -95,22 +114,19 @@ footer {
   cursor: pointer;
 }
 
-.section2 a{
-  
+.section2 a {
   padding: 6px 10px;
   border-radius: 6px;
   background-color: crimson;
-  color: #fff;
+  color: #f6f6f6;
   border: 2px solid crimson;
-
 }
 
-.section2 a:hover{
-  background-color: #fff;
-  color: crimson;
-  border: 2px solid crimson;
+.section2 a:hover {
+  background-color: #345b63;
+  color: #f6f6f6;
+  border: 2px solid #f6f6f6;
   cursor: pointer;
-
 }
 
 .hide {
@@ -132,7 +148,49 @@ footer {
     height: 40vh;
     margin-bottom: 30px;
   }
+  .main-heading {
+    
+    font-size: 30px;
+    
+  }
 }
 
 @media only screen and (max-width: 400px) {
+  .main-heading {
+    
+    font-size: 20px;
+    
+  }
+}
+
+
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 400px;
+  height: 5px;
+  background: #ddd;
+  
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -6px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
 }

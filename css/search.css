@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+body {
+  background-color: #f6f6f6;
+}
+.main-heading {
+  display: flex;
+  justify-content: center;
+  color: #f6f6f6;
+  font-size: 40px;
+  font-weight: 800;
+  background: #345b63;
+  padding: 40px 20px 20px 20px;
+}
+
+.fixed p {
+  color: #345b63;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 5% 90% 5%;
+}
+
+section #Info_Cont1 {
+}
+
+section #array_container {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 30px;
+}
+
+section #Info_Cont2 {
+}
+
+.section2 {
+  display: flex;
+  justify-content: center;
+  background-color: #345b63;
+  padding-bottom: 50px;
+}
+
+.section3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.section3 button {
+  padding: 10px;
+  border-radius: 6px;
+  background-color: crimson;
+  color: #f6f6f6;
+  border: 2px solid crimson;
+}
+
+.section3 button:hover {
+  background-color: #f6f6f6;
+  color: crimson;
+  border: 2px solid crimson;
+  cursor: pointer;
+}
+
+.algos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.algos button {
+  padding: 20px;
+  margin: 10px;
+  min-width: 100px;
+  color: #f6f6f6;
+  background-color: green;
+  border: 2px solid green;
+  border-radius: 6px;
+}
+.algos button:hover {
+  border-radius: 6px;
+  border: 2px solid green;
+  color: green;
+  background-color: #f6f6f6;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.array-inputs {
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.array-inputs:hover {
+  cursor: pointer;
+}
+
+.section2 a {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: crimson;
+  color: #f6f6f6;
+  border: 2px solid crimson;
+}
+
+.section2 a:hover {
+  background-color: #345b63;
+  color: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+.fixed {
+  margin: 0 20px;
+}
+
+.fixed input:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  section #array_container {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 30px;
+  }
+
+  .main-heading {
+    
+    font-size: 30px;
+    
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    .main-heading {
+    
+        font-size: 20px;
+        
+      }
+}
