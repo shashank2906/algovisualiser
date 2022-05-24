@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 750px;
+  height: 250px;
 }
 
 a {
@@ -34,6 +34,23 @@ a {
 a:hover {
   background-color: #f6f6f6;
   color: #345b63;
+}
+
+.container-main{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+  padding: 40px;
+}
+
+.lord-icon{
+  display: flex;
+  justify-content: center;
+}
+.algo h1{
+  font-size: 120px;
+  font-weight: 600;
+  margin-top: 45px;
 }
 
 @media only screen and (max-width: 600px) {

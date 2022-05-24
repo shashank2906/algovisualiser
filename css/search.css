@@ -163,3 +163,37 @@ footer {
         
       }
 }
+.fixed p{
+  color: #343a40;
+}
+
+
+input[type=range]{
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 400px;
+  height: 5px;
+  background: grey;
+  
+  border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  background: #345b63;
+  margin-top: -6px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: grey;
+}
