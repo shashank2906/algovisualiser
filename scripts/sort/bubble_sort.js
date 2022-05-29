@@ -22,11 +22,11 @@ function Bubble()
                 div_update(divs[j],div_sizes[j], "red");//Height update
                 div_update(divs[j+1],div_sizes[j+1], "red");//Height update
             }
-            div_update(divs[j],div_sizes[j], "#343a40");//Color updat // main color 
+            div_update(divs[j],div_sizes[j], "darkblue");//Color updat // main color 
         }
-        div_update(divs[j],div_sizes[j], "blue");//Color update
+        div_update(divs[j],div_sizes[j], "green");//Color update
     }
-    div_update(divs[0],div_sizes[0], "blue");//Color update
+    div_update(divs[0],div_sizes[0], "green");//Color update
     // these are colors after color update 
 
     enable_buttons();

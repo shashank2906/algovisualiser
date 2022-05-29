@@ -1,9 +1,4 @@
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
-    *****************
-*/
+
 
 function Selection_sort()
 {
@@ -23,14 +18,14 @@ function Selection_sort()
             {
                 if(index_min!=i)
                 {
-                    div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
+                    div_update(divs[index_min],div_sizes[index_min],"darkblue");//Color update
                 }
                 index_min=j;
                 div_update(divs[index_min],div_sizes[index_min],"red");//Color update
             }
             else
             {
-                div_update(divs[j],div_sizes[j],"blue");//Color update
+                div_update(divs[j],div_sizes[j],"darkblue");//Color update
             }
         }
         
@@ -42,7 +37,7 @@ function Selection_sort()
 
             div_update(divs[index_min],div_sizes[index_min],"red");//Height update
             div_update(divs[i],div_sizes[i],"red");//Height update
-            div_update(divs[index_min],div_sizes[index_min],"blue");//Color update
+            div_update(divs[index_min],div_sizes[index_min],"darkblue");//Color update
         }
         div_update(divs[i],div_sizes[i],"green");//Color update
     }
@@ -50,10 +45,3 @@ function Selection_sort()
 
     enable_buttons();
 }
-
-/*
-    *****************
-    DONE BY:-   TUMMALA KETHAN
-    E-MAIL:-    tummala.kethan@gmail.com
-    *****************
-*/
