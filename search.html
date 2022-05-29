@@ -8,14 +8,17 @@
     <link rel="stylesheet" href="./css/search.css" />
   </head>
   <body>
+    <!-- -------------------------------------------------
+     // header section -->
     <div class="main-heading">
       <h1>SEARCHING</h1>
-      
     </div>
     <div class="section2">
       <a href="/index.html">Home</a>
     </div>
-    
+
+    <!-- -------------------------------------------------
+     // mid section -->
 
     <section>
       <div id="Info_Cont1">
@@ -26,6 +29,9 @@
 
       <div id="Info_Cont2"></div>
     </section>
+
+    <!-- -------------------------------------------------
+     // footer section -->
 
     <footer>
       <div class="section3">
@@ -46,20 +52,25 @@
         </div>
         <div class="fixed">
           <p>Speed</p>
-          <input class="slider" id="a_speed" type="range" min="1" max="5" step="1" value="4" />
+          <input
+            class="slider"
+            id="a_speed"
+            type="range"
+            min="1"
+            max="5"
+            step="1"
+            value="4"
+          />
         </div>
       </div>
 
       <div class="algos">
         <button>Linear</button>
         <button>Binary</button>
-        
       </div>
     </footer>
 
     <script src="./scripts/main.js"></script>
-    <!--This should be at the end of body and should be loaded before sorts.js-->
-    
 
     <script src="./scripts/search/linear.js"></script>
     <script src="./scripts/search/binary.js"></script>

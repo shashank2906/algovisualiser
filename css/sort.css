@@ -48,6 +48,8 @@ section #Info_Cont2 {
   justify-content: center;
   background-color: #345b63;
   padding-bottom: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .section3 {

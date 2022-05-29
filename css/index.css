@@ -41,8 +41,9 @@ a:hover {
 .container-main{
   display: flex;
   justify-content: center;
-  margin: 40px;
-  padding: 40px;
+  /* margin: 40px; */
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
 .lord-icon{
@@ -53,6 +54,11 @@ a:hover {
   font-size: 120px;
   font-weight: 600;
   margin-top: 45px;
+}
+
+.main-wrap{
+  padding: 30px;
+  margin-bottom: 80px;
 }
 
 @media only screen and (max-width: 600px) {

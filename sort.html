@@ -8,15 +8,17 @@
     <link rel="stylesheet" href="./css/sort.css" />
   </head>
   <body>
+    <!-- -------------------------------------------------
+     // header section -->
     <div class="main-heading">
       <h1>SORTING</h1>
-      
     </div>
     <div class="section2">
       <a href="/index.html">Home</a>
     </div>
-    
 
+    <!-- -------------------------------------------------
+     // array section -->
     <section>
       <div id="Info_Cont1">
         <p></p>
@@ -26,7 +28,8 @@
 
       <div id="Info_Cont2"></div>
     </section>
-
+    <!-- -------------------------------------------------
+     // footer section -->
     <footer>
       <div class="section3">
         <button id="a_generate">New Array</button>
@@ -46,7 +49,15 @@
         </div>
         <div class="fixed">
           <p>Speed</p>
-          <input class="slider" id="a_speed" type="range" min="1" max="10" step="1" value="4" />
+          <input
+            class="slider"
+            id="a_speed"
+            type="range"
+            min="1"
+            max="10"
+            step="1"
+            value="4"
+          />
         </div>
       </div>
 
@@ -61,8 +72,7 @@
     </footer>
 
     <script src="./scripts/main.js"></script>
-    <!--This should be at the end of body and should be loaded before sorts.js-->
-    
+
     <script src="./scripts/sort/bubble_sort.js"></script>
     <script src="./scripts/sort/selection_sort.js"></script>
     <script src="./scripts/sort/insertion_sort.js"></script>
