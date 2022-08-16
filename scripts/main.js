@@ -1,17 +1,19 @@
 var inp_as = document.getElementById('a_size'),
-  array_size = inp_as.value;
+array_size = inp_as.value;
+
 var inp_gen = document.getElementById('a_generate');
 var inp_aspeed = document.getElementById('a_speed');
-//var array_speed=document.getElementById('a_speed').value;
-
 var butts_algos = document.querySelectorAll('.algos button');
+// console.log(butts_algos);
 
 var div_sizes = [];
 var divs = [];
 var margin_size;
 var cont = document.getElementById('array_container');
-var cont2 = document.getElementById('array_container2');
 cont.style = 'flex-direction:row';
+// console.log(div_sizes);
+// console.log(divs);
+
 
 // ---------------------------------------------------------
 // Array generation and updation functions
@@ -27,7 +29,7 @@ function generate_array() {
 
   for (var i = 0; i < array_size; i++) {
     div_sizes[i] =
-      Math.floor(Math.random() * 0.5 * (inp_as.max - inp_as.min)) + 10;
+    Math.floor(Math.random() * 0.5 * (inp_as.max - inp_as.min)) + 10;
     divs[i] = document.createElement('div');
     cont.appendChild(divs[i]);
     margin_size = 0.3;
