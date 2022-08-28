@@ -108,7 +108,7 @@ function div_update(cont, height, color) {
       '%; background-color:' +
       color +
       ';';
-  }, (c_delay += delay_time));
+  }, (c_delay +=delay_time));
 }
 
 // ---------------------------------------------------------
