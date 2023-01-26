@@ -22,4 +22,3 @@ function Binary()
 
     enable_buttons();
 }
-

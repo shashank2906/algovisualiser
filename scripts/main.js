@@ -1,10 +1,9 @@
 var inp_as = document.getElementById('a_size'),
-array_size = inp_as.value;
+  array_size = inp_as.value;
 
 var inp_gen = document.getElementById('a_generate');
 var inp_aspeed = document.getElementById('a_speed');
 var butts_algos = document.querySelectorAll('.algos button');
-// console.log(butts_algos);
 
 var div_sizes = [];
 var divs = [];
@@ -13,7 +12,6 @@ var cont = document.getElementById('array_container');
 cont.style = 'flex-direction:row';
 // console.log(div_sizes);
 // console.log(divs);
-
 
 // ---------------------------------------------------------
 // Array generation and updation functions
@@ -29,7 +27,7 @@ function generate_array() {
 
   for (var i = 0; i < array_size; i++) {
     div_sizes[i] =
-    Math.floor(Math.random() * 0.5 * (inp_as.max - inp_as.min)) + 10;
+      Math.floor(Math.random() * 0.5 * (inp_as.max - inp_as.min)) + 10;
     divs[i] = document.createElement('div');
     cont.appendChild(divs[i]);
     margin_size = 0.3;
@@ -108,7 +106,7 @@ function div_update(cont, height, color) {
       '%; background-color:' +
       color +
       ';';
-  }, (c_delay +=delay_time));
+  }, (c_delay += delay_time));
 }
 
 // ---------------------------------------------------------
